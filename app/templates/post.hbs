@@ -1,0 +1,60 @@
+{{> header }}
+
+<div class="container">
+
+    {{#if data.facebookcomments }}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    {{/if}}
+
+    <div class="row">
+        <div class="col-md-8">
+            <article class="post">
+                <p class="date">{{ this.meta.formattedDate }}</p>
+                <h1>{{capitalize meta.title}}</h1>
+                {{{ post.content }}}
+                <ul class="categorylist">{{#each meta.categories }}<li><a href="/blog/categories/{{ linkformat this }}/">{{ this }}</a></li>{{/each}}</ul>
+                {{#if data.addthis}}<div class="addthis_sharing_toolbox"></div>{{/if}}
+              <section class="comments">
+                  {{#if data.disqus }}
+                  <div id="disqus_thread"></div>
+                  <script type="text/javascript">
+                    window.disqus_identifier="{{ data.url }}{{ path }}";
+                    window.disqus_url="{{ data.url }}{{ path }}";
+                    window.disqus_title="{{capitalize meta.title}}";
+                  </script>
+                  <script type="text/javascript" src="http://disqus.com/forums/{{ data.disqus }}/embed.js"></script>
+                  <noscript><a href="http://{{ data.disqus }}.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+                {{/if}}
+                {{#if data.facebookcomments }}
+                <div class="fb-comments" data-href="{{ data.url }}{{ path }}/" data-width="470" data-num-posts="10"></div>
+                    </div>
+                {{/if}}
+              </section>
+            </article>
+        </div>
+        {{> sidebar }}
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="pager">
+                {{#if next}}
+                <li><a href="{{ next.path }}">{{capitalize next.title}}</a></li>
+                {{/if}}
+                {{#if prev}}
+                <li><a href="{{ prev.path }}">{{capitalize prev.title}}</a></li>
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+{{> footer }}

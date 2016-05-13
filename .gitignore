@@ -1,5 +1,10 @@
-node_modules
-dist
-.tmp
-.sass-cache
-bower_components
+node_modules/
+build/
+static/bower_components/
+.sass-cache/
+.DS_Store
+*.swp
+www/
+tmp/
+.grunt/
+blogbuilderoutput/
