@@ -1,5 +1,5 @@
 {
-  "name": "the_inconsistent_estimator",
+  "name": "the_weak_learner",
   "version": "1.0.0",
   "description": "A blog about programming and statistics",
   "main": "Gruntfile.js",
@@ -7,7 +7,7 @@
     "static",
     "blog"
   ],
-  "author": "Josh Weinstock <user@example.com> (http://example.com)",
+  "author": "Josh Weinstock <user@example.com> (http://weinstockj.github.io)",
   "license": "GPLv2",
   "dependencies": {
     "bootstrap-sass": "^3.3.6",

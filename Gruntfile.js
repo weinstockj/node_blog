@@ -25,14 +25,14 @@ module.exports = function (grunt) {
             options: {
               data: {
                 author: "Josh Weinstock",
-                url: "http://example.com",
+                url: "http://weinstockj.github.io",
                 email: "user@example.com",
-                
+
                 googleanalytics: "UA-XXXXX-X",
-                
-                
-                
-                title: "The Inconsistent Estimator",
+
+
+                github: "weinstockj",
+                title: "The Weak Learner test",
                 description: "A blog about programming and statistics",
                 truncatefeed: 0,
                 linenos: true
@@ -235,7 +235,7 @@ module.exports = function (grunt) {
                     'blogbuilderoutput/**/*.html',
                     'blogbuilderoutput/**/rss.xml'
                 ],
-                homepage: 'http://example.com/'
+                homepage: 'http://weinstockj.github.io/'
             }
         },
         'gh-pages': {
