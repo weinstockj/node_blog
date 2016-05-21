@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>The Weak Learner</title>
+        <description>A blog about programming and statistics</description>
+        <link>http://weinstockj.github.io</link>
+        <lastBuildDate>Sat, 21 May 2016 21:56:30 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <copyright>Josh Weinstock 2016</copyright>
+        <generator>Feed for Node.js</generator>
+        <item>
+            <title><![CDATA[First post!]]></title>
+            <link>http://weinstockj.github.io/blog/2016/05/21/first-post!/</link>
+            <guid>http://weinstockj.github.io/blog/2016/05/21/first-post!/</guid>
+            <pubDate>Sat, 21 May 2016 19:44:58 GMT</pubDate>
+            <description><![CDATA[<p>This is my hello world! Just for my personal notes, I thought it would be useful to describe how I created this blog. I have fairly limited web development experience and figured creating a blog would be a fun way to improve (the benefit of having a website is also nice!).</p>
+<p>My development environment for this blog was Windows 10, working with node. I used the
+<a href="http://yeoman.io/">Yeoman</a> scaffolding tool to launch this <a href="https://github.com/matthewbdaly/generator-simple-static-blog#readme">generator</a> written by
+Matthew Daly. The generator made it fairly easy to spin up this blog. My workflow was something like editing files in <a href="atom.io">atom</a>, and then keeping <a href="http://www.mingw.org/">MinGW</a> (minimalist GNU) running in the background to switch between grunt and git commands. Writing posts is easy with markdown. </p>
+]]></description>
+            <content:encoded/>
+        </item>
+    </channel>
+</rss>
