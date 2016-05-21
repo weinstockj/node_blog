@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 
 
                 github: "weinstockj",
-                title: "The Weak Learner test",
+                title: "The Weak Learner",
                 description: "A blog about programming and statistics",
                 truncatefeed: 0,
                 linenos: true
