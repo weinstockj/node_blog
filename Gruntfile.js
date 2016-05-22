@@ -27,7 +27,7 @@ module.exports = function (grunt) {
                 author: "Josh Weinstock",
                 url: "http://weinstockj.github.io",
                 email: "user@example.com",
-
+                disqus: "theweaklearner",
                 googleanalytics: "UA-XXXXX-X",
 
 
