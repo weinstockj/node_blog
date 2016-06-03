@@ -2,29 +2,33 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-8">
-{{#each posts}}
-    <article class="post">
-        <p class="date">{{ this.meta.formattedDate }}</p>
-        <h1><a href="{{ this.path }}">{{capitalize this.meta.title}}</a></h1>
-        {{{ this.post.content }}}
-    </article>
-{{/each}}
+        <div class="col-sm-8 blog-main">
+          {{#each posts}}
+          <div class = "blog-post">
+              <!-- <article class="post"> -->
+                <h2 class = "blog-post-title"><a href="{{ this.path }}">{{capitalize this.meta.title}}</a></h2>
+                <p class="date">{{ this.meta.formattedDate }}</p>
+                {{{ this.post.content }}}
+              <!-- </article> -->
+            </div>
+          {{/each}}
         </div>
-        {{> sidebar }}
+          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            {{> sidebar }}
+          </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-             <ul class="pager">
-            {{#if prevChunk}}
-                <li><a href="/posts/{{ prevChunk }}/">Newer</a></li>
-            {{/if}}
+      <div class="row">
+          <div class="col-md-12">
+               <ul class="pager">
+                  {{#if prevChunk}}
+                      <li><a href="/posts/{{ prevChunk }}/">Newer</a></li>
+                  {{/if}}
 
-            {{#if nextChunk}}
-                <li><a href="/posts/{{ nextChunk }}/">Older</a></li>
-            {{/if}}
-             </ul>
-        </div>
-    </div>
+                  {{#if nextChunk}}
+                      <li><a href="/posts/{{ nextChunk }}/">Older</a></li>
+                  {{/if}}
+               </ul>
+          </div>
+      </div>
 </div>
 {{> footer }}

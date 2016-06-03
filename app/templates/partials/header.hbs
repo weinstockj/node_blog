@@ -11,23 +11,26 @@
         <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="/static/bower_components/sass-bootstrap/dist/css/bootstrap.min.css" media="all" />
         <link rel="stylesheet" type="text/css" href="/static/css/style.min.css" media="all" />
-        <link rel="alternate" type="application/rss+xml" title="{{capitalize data.title}} - feed" href="http://feeds.feedburner.com/MatthewDalysBlog" />
+        <link rel="stylesheet" type="text/css" href="http://v4-alpha.getbootstrap.com/examples/blog/blog.css" media="all"/>
+
         <title>{{#if meta.title}}{{capitalize meta.title}} - {{/if}}{{capitalize data.title}}</title>
     </head>
     <body>
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
-        {{#if data.addthis}}<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ data.addthis }}" async="async"></script>{{/if}}
+        <!-- {{#if data.addthis}}<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ data.addthis }}" async="async"></script>{{/if}} -->
 
         <header>
+            <!-- <div class="blog-masthead">
+              <div class="container">
+                 <nav class="nav blog-nav">
+                   <a class="nav-link active" href="/">Home</a>
+                   <a class="nav-link" href="/blog/archives/">Archives </a>
+               </nav>
+             </div>
+           </div> -->
             <div class="container headercontainer">
-                <div class="jumbotron">
-                    <h1><a href="/">{{capitalize data.title}}</a></h1>
-                    <h2>{{ data.description }}</h2>
-                </div>
-            </div>
-            <div class="container headercontainer">
-                <nav class="navbar navbar-inverse navbar-static-top">
+                <nav class="navbar navbar-default navbar-static-top">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-nav">
                             <span class="icon-bar"></span>
@@ -51,5 +54,13 @@
                         </div>
                     </div>
                 </nav>
+            </div>
+            <div class="blog-header">
+              <div class="container">
+                  <div class="jumbotron">
+                      <h1><a href="/">{{capitalize data.title}}</a></h1>
+                      <h2>{{ data.description }}</h2>
+                  </div>
+              </div>
             </div>
         </header>
