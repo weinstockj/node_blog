@@ -137,7 +137,16 @@ module.exports = function (grunt) {
                     'lunr.json'
                 ],
                 dest: 'www/'
+            },
+            readme: {
+                cwd: '/',
+                expand: true,
+                src: [
+                  'README.md'
+                ],
+                dest: '/'
             }
+
         },
         clean: [
             'www',
