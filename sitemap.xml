@@ -2,43 +2,97 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://weinstockj.github.io/</loc>
-    <lastmod>2016-06-04T02:22:12.398Z</lastmod>
+    <lastmod>2016-06-04T05:24:39.212Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/2016/05/21/first-post!/</loc>
-    <lastmod>2016-06-04T02:22:12.298Z</lastmod>
+    <lastmod>2016-06-04T05:24:39.012Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/2016/06/04/reading-in-data-in-julia-r-and-python/</loc>
+    <lastmod>2016-06-04T05:24:39.037Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/archives/</loc>
-    <lastmod>2016-06-04T02:22:12.314Z</lastmod>
+    <lastmod>2016-06-04T05:24:39.062Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://weinstockj.github.io/blog/categories/category/</loc>
-    <lastmod>2016-06-04T02:22:12.359Z</lastmod>
+    <loc>http://weinstockj.github.io/blog/categories/hello-world/</loc>
+    <lastmod>2016-06-04T05:24:39.110Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/julia/</loc>
+    <lastmod>2016-06-04T05:24:39.107Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/python/</loc>
+    <lastmod>2016-06-04T05:24:39.105Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/r/</loc>
+    <lastmod>2016-06-04T05:24:39.103Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/web-dev/</loc>
+    <lastmod>2016-06-04T05:24:39.116Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/posts/1/</loc>
-    <lastmod>2016-06-04T02:22:12.396Z</lastmod>
+    <lastmod>2016-06-04T05:24:39.200Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://weinstockj.github.io/blog/categories/category/rss.xml</loc>
-    <lastmod>2016-06-04T02:22:12.372Z</lastmod>
+    <loc>http://weinstockj.github.io/blog/categories/hello-world/rss.xml</loc>
+    <lastmod>2016-06-04T05:24:39.166Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/julia/rss.xml</loc>
+    <lastmod>2016-06-04T05:24:39.153Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/python/rss.xml</loc>
+    <lastmod>2016-06-04T05:24:39.139Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/r/rss.xml</loc>
+    <lastmod>2016-06-04T05:24:39.125Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/web-dev/rss.xml</loc>
+    <lastmod>2016-06-04T05:24:39.177Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/rss.xml</loc>
-    <lastmod>2016-06-04T02:22:12.340Z</lastmod>
+    <lastmod>2016-06-04T05:24:39.090Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
