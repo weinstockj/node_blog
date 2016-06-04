@@ -2,97 +2,97 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://weinstockj.github.io/</loc>
-    <lastmod>2016-06-04T05:35:59.812Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.227Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/2016/05/21/first-post!/</loc>
-    <lastmod>2016-06-04T05:35:59.564Z</lastmod>
+    <lastmod>2016-06-04T05:41:05.989Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/2016/06/04/reading-in-data-in-julia-r-and-python/</loc>
-    <lastmod>2016-06-04T05:35:59.586Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.012Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/archives/</loc>
-    <lastmod>2016-06-04T05:35:59.619Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.044Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/hello-world/</loc>
-    <lastmod>2016-06-04T05:35:59.701Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.106Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/julia/</loc>
-    <lastmod>2016-06-04T05:35:59.691Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.096Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/python/</loc>
-    <lastmod>2016-06-04T05:35:59.681Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.095Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/r/</loc>
-    <lastmod>2016-06-04T05:35:59.667Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.085Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/web-dev/</loc>
-    <lastmod>2016-06-04T05:35:59.711Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.112Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/posts/1/</loc>
-    <lastmod>2016-06-04T05:35:59.799Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.214Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/hello-world/rss.xml</loc>
-    <lastmod>2016-06-04T05:35:59.761Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.175Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/julia/rss.xml</loc>
-    <lastmod>2016-06-04T05:35:59.748Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.154Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/python/rss.xml</loc>
-    <lastmod>2016-06-04T05:35:59.734Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.139Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/r/rss.xml</loc>
-    <lastmod>2016-06-04T05:35:59.720Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.122Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/web-dev/rss.xml</loc>
-    <lastmod>2016-06-04T05:35:59.773Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.187Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/rss.xml</loc>
-    <lastmod>2016-06-04T05:35:59.647Z</lastmod>
+    <lastmod>2016-06-04T05:41:06.072Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
