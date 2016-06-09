@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>The Weak Learner</title>
     <link>http://weinstockj.github.io</link>
-    <updated>2016-06-08T01:43:58Z</updated>
+    <updated>2016-06-09T00:56:07Z</updated>
     <author>
         <name>Josh Weinstock</name>
         <email>user@example.com</email>
@@ -12,6 +12,109 @@
     <subtitle>A blog about programming and statistics</subtitle>
     <rights>Josh Weinstock 2016</rights>
     <generator>Feed for Node.js</generator>
+    <entry>
+        <title type="html"><![CDATA[Decorators in R]]></title>
+        <id>http://weinstockj.github.io/blog/2016/06/08/decorators-in-r/</id>
+        <link href="http://weinstockj.github.io/blog/2016/06/08/decorators-in-r/">
+        </link>
+        <updated>2016-06-08T01:51:09Z</updated>
+        <summary type="html"><![CDATA[<p>I recently became interested in the idea of writing decorators in R, as the
+title of this blog post may suggest. A decorator is a function that takes another
+function as input, and extends the behavior in some manner. A use-case is when
+you find yourself writing several functions, and each shares some small aspect
+of functionality or code. A reasonable example is as follows.</p>
+<p>Consider the case where you are writing several functions in R, each of which
+takes some non-trivial amount of time to compute. You’d like to time each of
+them. One approach would be the following:</p>
+<pre><code>
+important_task = function() {
+  ptm = proc.time()
+  # important stuff here
+  seconds = (proc.time() - ptm)[[3]]
+  cat(sprintf("time used: %.2f\n", seconds))
+  # return whatever
+}
+
+another_important_task = function() {
+  ptm = proc.time()
+  # more important stuff here
+  seconds = (proc.time() - ptm)[[3]]
+  cat(sprintf("time used: %.2f\n", seconds))
+  # return whatever
+}
+</code></pre>
+
+<p>Another approach is to use a decorator. Let’s define our R decorator like so:</p>
+<pre><code>
+time = funtion(f) {
+  function(...) {
+    ptm = proc.time()
+    result = f(...)  
+    seconds = (proc.time() - ptm)[[3]]
+    cat(sprintf("time used: %.2f\n", seconds))
+    return(result)
+  }
+}
+</code></pre>
+
+<p>And then we can apply our decorator:</p>
+<pre><code>
+important_task_decorated = time(important_task)
+</code></pre>
+
+<p>For additional style points, we can define an infix operator to represent this operation:</p>
+<pre><code>
+`%decorate%` = function(decorator, f) {
+  decorator(f)
+}
+
+important_task = time %decorate% function() cat("important stuff\n")
+</code></pre>
+
+<p>The chief benefit from my perspective is that things are now a little more modular.
+I could change the decorator to write out the timings, or some other message,
+into a log if I wished. This would then modify every function that I decorate,
+which is better in my estimation than going into each function and changing whatever the shared functionality is. Less duplicated code is a good thing. The downsides
+include more cognitive overhead induced by the new syntax, and I could envision certain scenarios in which this approach obfuscates the behavior of a given function.</p>
+<h3 id="a-digression-on-scoping-rules-in-r">A digression on scoping rules in R</h3>
+<p>The ability to write closures in R enables this technique. An excellent reference on the subject comes from <a href="http://adv-r.had.co.nz/Functional-programming.html#closures">Hadley</a> . I will note
+that one potential area of confusion that could arise in this context is relating to R’s scoping rules. If you used the decorator to create an object that the decorated function depends on, the result would be an error that the object can’t be found by the decorated function. This is because R uses lexical scoping as opposed to dynamic scoping. In this context, this means that the enclosing environment of functions when they are created is very important. Here’s an example of where this would fail:</p>
+<p><pre><code>
+decorator = function(f) function(…) {
+  a = 5
+  f(…)
+}
+f = decorator %decorate% function() a + 2
+</pre></code></p>
+<p>To make this work, you’d have to change the enclosure of f to the anonymous
+function in the decorator.</p>
+<p><pre><code>
+decorator = function(f) function(…) {
+  a = 5
+  environment(f) = environment()
+  f(…)
+}
+f = decorator %decorate% function() a + 2
+</pre></code></p>
+<p>Now, when f does not see the variable <code>a</code> in its scope, it can search
+in its enclosure, and it will find the <code>a</code> defined.</p>
+<p>For more on this, see <code>?environment</code> for the following:</p>
+<blockquote>
+<p>Environments consist of a frame, or collection of named objects, and a pointer to an enclosing environment. The most common example is the frame of variables local to a function call; its enclosure is the environment where the function was defined (unless changed subsequently). The enclosing environment is distinguished from the parent frame: the latter (returned by parent.frame) refers to the environment of the caller of a function. Since confusion is so easy, it is best never to use ‘parent’ in connection with an environment (despite the presence of the function parent.env).</p>
+<p>When get or exists search an environment with the default inherits = TRUE, they look for the variable in the frame, then in the enclosing frame, and so on.</p>
+<p>The global environment .GlobalEnv, more often known as the user’s workspace, is the first item on the search path. It can also be accessed by globalenv(). On the search path, each item’s enclosure is the next item.</p>
+<p>The object .BaseNamespaceEnv is the namespace environment for the base package. The environment of the base package itself is available as baseenv().</p>
+<p>If one follows the chain of enclosures found by repeatedly calling parent.env from any environment, eventually one reaches the empty environment emptyenv(), into which nothing may be assigned.</p>
+<p>The replacement function parent.env&lt;- is extremely dangerous as it can be used to destructively change environments in ways that violate assumptions made by the internal C code. It may be removed in the near future.</p>
+<p>The replacement form of environment, is.environment, baseenv, emptyenv and globalenv are primitive functions.</p>
+</blockquote>
+<p>System environments, such as the base, global and empty environments, have names as do the package and namespace environments and those generated by attach(). Other environments can be named by giving a “name” attribute, but this needs to be done with care as environments have unusual copying semantics.</p>
+<h3 id="finishing-thoughts">Finishing thoughts</h3>
+<p>I don’t know if I’ll actually make use of this technique in the future, but it
+seemed fun and fulfilled a use-case for me earlier today, so figured I’d spend some
+time to write up the process.</p>
+]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Reading in data in Julia, R, and Python]]></title>
         <id>http://weinstockj.github.io/blog/2016/06/04/reading-in-data-in-julia-r-and-python/</id>
