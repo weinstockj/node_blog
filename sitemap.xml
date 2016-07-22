@@ -2,103 +2,133 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://weinstockj.github.io/</loc>
-    <lastmod>2016-06-21T02:34:49.052Z</lastmod>
+    <lastmod>2016-07-22T02:43:02.031Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/2016/05/21/first-post!/</loc>
-    <lastmod>2016-06-21T02:34:48.789Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.555Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/2016/06/04/reading-in-data-in-julia-r-and-python/</loc>
-    <lastmod>2016-06-21T02:34:48.811Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.603Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/2016/06/08/decorators-in-r/</loc>
-    <lastmod>2016-06-21T02:34:48.832Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.640Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/2016/07/19/using-a-char-rnn-on-the-r-manual/</loc>
+    <lastmod>2016-07-22T02:43:01.693Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/archives/</loc>
-    <lastmod>2016-06-21T02:34:48.875Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.747Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/deep-learning/</loc>
+    <lastmod>2016-07-22T02:43:01.811Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/hello-world/</loc>
-    <lastmod>2016-06-21T02:34:48.940Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.867Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/julia/</loc>
-    <lastmod>2016-06-21T02:34:48.938Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.855Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/machine-learning/</loc>
+    <lastmod>2016-07-22T02:43:01.822Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/python/</loc>
-    <lastmod>2016-06-21T02:34:48.936Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.844Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/r/</loc>
-    <lastmod>2016-06-21T02:34:48.926Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.834Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/web-dev/</loc>
-    <lastmod>2016-06-21T02:34:48.954Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.877Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/posts/1/</loc>
-    <lastmod>2016-06-21T02:34:49.040Z</lastmod>
+    <lastmod>2016-07-22T02:43:02.016Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/deep-learning/rss.xml</loc>
+    <lastmod>2016-07-22T02:43:01.900Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/hello-world/rss.xml</loc>
-    <lastmod>2016-06-21T02:34:49.005Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.976Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/julia/rss.xml</loc>
-    <lastmod>2016-06-21T02:34:48.993Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.964Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://weinstockj.github.io/blog/categories/machine-learning/rss.xml</loc>
+    <lastmod>2016-07-22T02:43:01.914Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/python/rss.xml</loc>
-    <lastmod>2016-06-21T02:34:48.980Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.947Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/r/rss.xml</loc>
-    <lastmod>2016-06-21T02:34:48.965Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.931Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/blog/categories/web-dev/rss.xml</loc>
-    <lastmod>2016-06-21T02:34:49.016Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.988Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://weinstockj.github.io/rss.xml</loc>
-    <lastmod>2016-06-21T02:34:48.905Z</lastmod>
+    <lastmod>2016-07-22T02:43:01.778Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

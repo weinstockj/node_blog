@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>The Weak Learner</title>
     <link>http://weinstockj.github.io</link>
-    <updated>2016-06-21T02:34:48Z</updated>
+    <updated>2016-07-22T02:43:01Z</updated>
     <author>
         <name>Josh Weinstock</name>
         <email>user@example.com</email>
@@ -12,6 +12,46 @@
     <subtitle>A blog about programming and statistics</subtitle>
     <rights>Josh Weinstock 2016</rights>
     <generator>Feed for Node.js</generator>
+    <entry>
+        <title type="html"><![CDATA[Using a char-rnn on the R manual]]></title>
+        <id>http://weinstockj.github.io/blog/2016/07/19/using-a-char-rnn-on-the-r-manual/</id>
+        <link href="http://weinstockj.github.io/blog/2016/07/19/using-a-char-rnn-on-the-r-manual/">
+        </link>
+        <updated>2016-07-19T01:52:26Z</updated>
+        <summary type="html"><![CDATA[<p>Character recurrent neural networks have become very popular in recent years in the deep learning community for learning probability distributions over sequences of characters. More concretely, the probably of an “o” given the sequence of letters
+“hell” . There are many ways to model sequences of characters, and it does not have to be accomplished with either a recurrent neural network or on a character level. E.g., simple markov models can perform reasonably in this context (reasonably not defined..), or a model could be trained on words. I will not offer a more in depth explanation, but instead I’ll link to two posts on the matter which offer far more lucid explanations than I could ever offer on the subject.</p>
+<p>Anyway, as far as I’m aware, the canonical blog post on the subject comes from Andrej Karpathy <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">here</a> . Karpathy open sourced a version of the network in the torch language. The model was rewritten to use Tensorflow in this implementation <a href="https://github.com/sherjilozair/char-rnn-tensorflow">here</a> . This is the code I used for this project, for no particular reason other than curiosity.</p>
+<p>As far as I can tell, LSTM’s are generally more popular these days than recurrent neural networks. An excellent post on the subject is <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">here</a> .</p>
+<p>These models can produce some entertaining results. A prime example is the <a href="https://twitter.com/deepdrumpf">@deepdrumpf</a> Twitter account, which tweets samples from a trained recurrent neural network.</p>
+<p>In a more nerdy direction, I trained a char-rnn on the sexy corpus of text known as the <a href="https://cran.r-project.org/manuals.html">R manuals</a>. I also added a small sprinkle of text from <a href="http://adv-r.had.co.nz/">Hadley Wickham’s Advanced R.</a> . The hope being that my neural net would produce some fabulous new pieces of R Wizardry.</p>
+<p>I trained my model in the official Tenorflow <a href="https://hub.docker.com/r/tensorflow/tensorflow/">docker</a> container. I did this to avoid all the headache of setting up the proper python / jupyter / Tensorflow enviroment. I trained the model with a single hidden layer with 350 hidden units, and some standard amount of dropout that I don’t remember. It took several hours since I trained it on the CPU of my laptop.</p>
+<h2 id="the-incredible-results">The Incredible results</h2>
+<blockquote>
+versiol computing dur can be set to eady
+containing your response.
+
+Next: build update that you should use file if the representation on the following table: these can save a little might be imported from by information and opened by complex types are handled
+used
+to create them elseugh R installed in others. R malloc(), but is checked siges to implement frequently.
+</blockquote>
+
+<p>The spelling is decent - remember that the model has no concept of grammar and has to learn everything from the corpus.</p>
+<p>This is mostly gibberish. =( . Let’s try another!</p>
+<blockquote>
+If you have the same assingment as needs to be in that environment, as not necessary to FORTRAN. Note that it is essential, for example shown that a ‘Method’ that does if a useful for a shared object. I’l book is the file see Lathest attaches the package task. If you need to get an installed header files in the convoltable to contribute Furbath, supply a 32-bit and write.table and those for the environment of the loop. The best common in R CMD check that we can in the reposi
+</blockquote>  
+
+<p>A little better this time. The model learned some stuff about header files and Fortran being parts that drive R. It also learned about the write.table function and R CMD CHECK.</p>
+<p>Let’s do one last sample:</p>
+<blockquote>
+Function. Do not need duplication flags. To try the national expressions, only 02 and 1 is the more efficient to the command is better to take a parent of the model at least in front-end. You can remove Fortran CPUs should stit in an object in the default is defined in the previous might want to read libraries supplied for other useful returns. It is needed, the efficienchmarms to form Negatives. ‘A mile88 bytes are coerced to compute C++ extensions. You might won’t register them once things able th
+</blockquote>
+
+<p>Well I primed this sample with “function”, but looks like the model spit out some stuff about compiling and C++. Also another mention of Fortran here.</p>
+<h3 id="ending-thoughts">Ending thoughts</h3>
+<p>The results were not as amusing as I had hoped - perhaps that’s merely a product of this being a ridiculous endeavor. Anyway, it was worthwhile getting a little more familiar with Docker and Tensorflow. Obvious limitations include training a small network on a small corpus. The source for this is <a href="https://github.com/weinstockj/char_rnn_experiment">here</a>. </p>
+]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Decorators in R]]></title>
         <id>http://weinstockj.github.io/blog/2016/06/08/decorators-in-r/</id>
